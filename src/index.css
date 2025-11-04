@@ -6,33 +6,33 @@
 
 @layer base {
   :root {
-    --background: 220 26% 9%;
+    --background: 270 50% 5%;
     --foreground: 0 0% 100%;
 
-    --card: 220 20% 12%;
+    --card: 270 40% 8%;
     --card-foreground: 0 0% 100%;
 
-    --popover: 220 20% 12%;
+    --popover: 270 40% 8%;
     --popover-foreground: 0 0% 100%;
 
-    --primary: 199 89% 48%;
+    --primary: 280 100% 70%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 262 83% 58%;
+    --secondary: 310 100% 60%;
     --secondary-foreground: 0 0% 100%;
 
-    --muted: 220 15% 25%;
-    --muted-foreground: 0 0% 70%;
+    --muted: 270 30% 15%;
+    --muted-foreground: 280 20% 70%;
 
-    --accent: 262 83% 58%;
+    --accent: 330 100% 65%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 220 15% 20%;
-    --input: 220 15% 20%;
-    --ring: 199 89% 48%;
+    --border: 270 40% 15%;
+    --input: 270 40% 12%;
+    --ring: 280 100% 70%;
 
     --radius: 0.75rem;
 
@@ -134,7 +134,7 @@
   }
 
   .gradient-text {
-    background: linear-gradient(135deg, #0ea5e9 0%, #8b5cf6 100%);
+    background: linear-gradient(135deg, #c026d3 0%, #9333ea 50%, #ec4899 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -142,7 +142,7 @@
 
   .gradient-border {
     position: relative;
-    background: linear-gradient(135deg, #0ea5e9 0%, #8b5cf6 100%);
+    background: linear-gradient(135deg, #c026d3 0%, #9333ea 50%, #ec4899 100%);
     padding: 2px;
     border-radius: 0.75rem;
   }
