@@ -32,13 +32,13 @@ const Index = () => {
   const payback = calculatePayback();
 
   return (
-    <div className="min-h-screen bg-background">
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-lg border-b border-border">
+    <div className="min-h-screen animated-gradient">
+      <nav className="fixed top-0 left-0 right-0 z-50 bg-background/90 backdrop-blur-lg border-b border-primary/20 neon-glow">
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
-            <div className="flex items-center gap-2">
-              <Icon name="Smartphone" size={28} className="text-primary" />
-              <span className="text-2xl font-bold gradient-text">SmartFranchise</span>
+            <div className="flex items-center gap-3">
+              <img src="https://cdn.poehali.dev/files/9c6253a8-3d75-4735-8f2f-2f2637448b03.jpg" alt="Логотип" className="w-12 h-12 object-contain" />
+              <span className="text-2xl font-bold gradient-text neon-text">НАДЁЖНЫЕ СМАРТФОНЫ</span>
             </div>
             <div className="hidden md:flex items-center gap-6">
               {['home', 'franchise', 'conditions', 'partners', 'contacts'].map((section) => (
@@ -57,7 +57,7 @@ const Index = () => {
                 </button>
               ))}
             </div>
-            <Button size="lg" className="hidden md:flex">
+            <Button size="lg" className="hidden md:flex neon-glow-hover">
               Стать партнёром
               <Icon name="ArrowRight" size={18} className="ml-2" />
             </Button>
@@ -77,11 +77,11 @@ const Index = () => {
                 проверенная бизнес-модель и окупаемость от 6 месяцев.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button size="lg" className="text-lg px-8 py-6">
+                <Button size="lg" className="text-lg px-8 py-6 neon-glow-hover">
                   <Icon name="Calculator" size={20} className="mr-2" />
                   Рассчитать окупаемость
                 </Button>
-                <Button size="lg" variant="outline" className="text-lg px-8 py-6">
+                <Button size="lg" variant="outline" className="text-lg px-8 py-6 neon-glow-hover border-primary/50">
                   Узнать подробнее
                   <Icon name="ChevronRight" size={20} className="ml-2" />
                 </Button>
@@ -90,7 +90,7 @@ const Index = () => {
             <div className="animate-scale-in">
               <div className="relative">
                 <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-secondary/20 rounded-3xl blur-3xl"></div>
-                <Card className="relative gradient-border">
+                <Card className="relative gradient-border neon-glow">
                   <div className="p-8">
                     <div className="grid grid-cols-2 gap-6">
                       <div className="text-center">
@@ -118,7 +118,7 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="franchise" className="py-20 px-4 bg-card/30">
+      <section id="franchise" className="py-20 px-4 bg-card/10">
         <div className="container mx-auto">
           <div className="text-center mb-16 animate-fade-in">
             <h2 className="text-4xl lg:text-5xl font-bold mb-4">Почему мы?</h2>
@@ -135,7 +135,7 @@ const Index = () => {
               { icon: 'Package', title: 'Поставки товара', desc: 'Прямые контракты с производителями, лучшие цены' },
               { icon: 'Headphones', title: 'Маркетинг 360°', desc: 'Готовые кампании, материалы и digital-стратегия' }
             ].map((item, index) => (
-              <Card key={index} className="hover-scale cursor-pointer border-border/50 hover:border-primary/50 transition-all">
+              <Card key={index} className="hover-scale cursor-pointer border-primary/30 neon-glow-hover transition-all">
                 <CardHeader>
                   <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
                     <Icon name={item.icon} size={24} className="text-primary" />
@@ -159,7 +159,7 @@ const Index = () => {
               Рассчитайте срок окупаемости франшизы для вашего региона
             </p>
           </div>
-          <Card className="gradient-border">
+          <Card className="gradient-border neon-glow">
             <CardContent className="p-8">
               <div className="space-y-8">
                 <div>
@@ -250,7 +250,7 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="conditions" className="py-20 px-4 bg-card/30">
+      <section id="conditions" className="py-20 px-4 bg-card/10">
         <div className="container mx-auto max-w-5xl">
           <div className="text-center mb-16 animate-fade-in">
             <h2 className="text-4xl lg:text-5xl font-bold mb-4">Условия франшизы</h2>
@@ -259,7 +259,7 @@ const Index = () => {
             </p>
           </div>
           <div className="grid md:grid-cols-2 gap-8">
-            <Card className="border-primary/50">
+            <Card className="border-primary/50 neon-glow-hover">
               <CardHeader>
                 <CardTitle className="text-2xl">Паушальный взнос</CardTitle>
               </CardHeader>
@@ -279,7 +279,7 @@ const Index = () => {
               </CardContent>
             </Card>
 
-            <Card className="border-secondary/50">
+            <Card className="border-secondary/50 neon-glow-hover">
               <CardHeader>
                 <CardTitle className="text-2xl">Что входит</CardTitle>
               </CardHeader>
@@ -323,7 +323,7 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="contacts" className="py-20 px-4 bg-card/30">
+      <section id="contacts" className="py-20 px-4 bg-card/10">
         <div className="container mx-auto max-w-4xl">
           <div className="text-center mb-12 animate-fade-in">
             <h2 className="text-4xl lg:text-5xl font-bold mb-4">Связаться с нами</h2>
@@ -331,7 +331,7 @@ const Index = () => {
               Оставьте заявку и получите презентацию франшизы
             </p>
           </div>
-          <Card className="gradient-border">
+          <Card className="gradient-border neon-glow">
             <CardContent className="p-8">
               <form className="space-y-6">
                 <div className="grid md:grid-cols-2 gap-6">
@@ -352,7 +352,7 @@ const Index = () => {
                   <Label htmlFor="city" className="text-base">Город</Label>
                   <Input id="city" placeholder="Москва" className="mt-2" />
                 </div>
-                <Button size="lg" className="w-full text-lg py-6">
+                <Button size="lg" className="w-full text-lg py-6 neon-glow-hover">
                   Получить презентацию
                   <Icon name="Send" size={20} className="ml-2" />
                 </Button>
@@ -367,11 +367,11 @@ const Index = () => {
           <div className="grid md:grid-cols-4 gap-8 mb-8">
             <div>
               <div className="flex items-center gap-2 mb-4">
-                <Icon name="Smartphone" size={24} className="text-primary" />
-                <span className="text-xl font-bold gradient-text">SmartFranchise</span>
+                <img src="https://cdn.poehali.dev/files/9c6253a8-3d75-4735-8f2f-2f2637448b03.jpg" alt="Логотип" className="w-10 h-10 object-contain" />
+                <span className="text-xl font-bold gradient-text neon-text">НАДЁЖНЫЕ СМАРТФОНЫ</span>
               </div>
               <p className="text-sm text-muted-foreground">
-                Франшиза смартфонов будущего с полной поддержкой партнёров
+                Надёжные смартфоны — франшиза будущего с полной поддержкой партнёров
               </p>
             </div>
             <div>
